@@ -15,10 +15,10 @@ from urllib3.util import parse_url
 
 class WechatPayDALBase(object):
     def __init__(self, mch_appid, mchid, v3key, serial_no, client_key):
-        # TODO 定期调用api证书自动更新逻辑
         self.mch_appid = mch_appid
         self.mchid = mchid
         self.v3key = v3key
+        # serial_no可通过openssl直接获取, 例: openssl x509 -in 1900009191_20180326_cert.pem -noout -serial
         self.serial_no = serial_no
 
         with open(client_key, 'r') as ifile:

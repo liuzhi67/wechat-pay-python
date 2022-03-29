@@ -1,4 +1,3 @@
-# encoding=utf-8
 #!/usr/bin/python3
 from __future__ import absolute_import
 import base64
@@ -6,7 +5,6 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from Crypto.PublicKey import RSA
 from Crypto.Signature import pkcs1_15
 from Crypto.Hash import SHA256
-from datetime import datetime
 import hashlib
 import random
 import time

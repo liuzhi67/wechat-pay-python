@@ -3,7 +3,6 @@ from __future__ import absolute_import
 from datetime import datetime, timedelta
 import json
 import logging
-import random
 
 from base import WechatPayDALBase
 import requests
